@@ -1,0 +1,19 @@
+<h1>WebServer</h1>
+<p>
+  Jednoduchý web server na hostování statických souborů. Tento web server
+  využívá Express.
+</p>
+
+<h3>Složka</h3>
+<p>Složka, ze které se budou servovat soubory.</p>
+<input type="text" placeholder="/folder" id="folder" />
+
+<h3>Port</h3>
+<p>Port, na kterém server poběží.</p>
+<input type="number" placeholder="8000" id="port" />
+
+<button
+  onclick="ClList['{{ key }}'].functions.startWebserver(this.parentElement.parentElement);"
+>
+  Spustit
+</button>
