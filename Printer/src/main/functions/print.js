@@ -6,10 +6,10 @@ export default async function print(path) {
     path,
   );
 
-  const { printers } = JSON.parse(
+  const printers = JSON.parse(
     (
       await exec(
-        `lpstat -p | awk '/^printer/ {print $2}' | jq -R 'split("\\n") | map(select(length > 0)) | {printers: .}'`,
+        `lpstat -p | awk '/^printer/ {print $2}' | jq -R 'split("\\n") | map(select(length > 0))'`,
       )
     ).stdout,
   );
