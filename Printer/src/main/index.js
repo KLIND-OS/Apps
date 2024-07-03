@@ -33,11 +33,7 @@ ClassConstructor.add(
       styles.bind(this)();
 
       // Register supported file extensions
-      control.fileManager.addProgramToOpenApps(
-        supported,
-        this.utils.print,
-        "Tisknout",
-      );
+      this.app.fileOpen.register(supported, this.utils.print);
     }
   },
 );
