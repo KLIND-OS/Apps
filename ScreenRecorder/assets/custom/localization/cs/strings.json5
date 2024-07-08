@@ -1,7 +1,7 @@
 {
   start_recording: "Spustit nahrávání",
   welcome_in: "Welcome in ScreenRecorder",
-  program_for: "Program na jednoduché nahrávání obrazovky"
+  program_for: "Program na jednoduché nahrávání obrazovky",
   frontend_for: "Tato aplikace je KLIND OS FrontEnd pro Linuxovou aplikaci",
   continue: "Pokračovat do aplikace",
   stop_and_save: "Zastavit a uložit nahrávání",
