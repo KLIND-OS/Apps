@@ -1,0 +1,11 @@
+<h1>00:00</h1>
+<button
+  onclick="ClList['{{ key }}'].functions.stopRecording(this.parentElement.parentElement, this)"
+>
+  {{ strings.stop_and_save }}
+</button>
+<button
+  onclick="ClList['{{ key }}'].functions.killRecording(this.parentElement.parentElement, this)"
+>
+  {{ strings.stop_and_discard }}
+</button>

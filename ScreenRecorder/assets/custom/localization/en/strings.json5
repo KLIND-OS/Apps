@@ -1,0 +1,17 @@
+{
+  start_recording: "Start recording",
+  welcome_in: "Welcome in ScreenRecorder",
+  program_for: "Program for simple screen recording",
+  frontend_for: "This app is KLIND OS FrontEnd for Linux app called",
+  continue: "Continue to app",
+  stop_and_save: "Stop and save recording",
+  stop_and_discard: "Stop and discard recording",
+  recording_done: "Recording is done!",
+  saved_here: "Recording was saved here:",
+  please_wait: "Please wait...",
+  already_recording: "Recording is already in progress. You can only have one running.",
+  saving: "Saving",
+  converting: "Converting...",
+  recording_saved: "Recording saved",
+  recording: "Recording",
+}

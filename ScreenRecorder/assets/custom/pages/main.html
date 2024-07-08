@@ -1,0 +1,21 @@
+{{#if opened}}
+<h1>ScreenRecorder</h1>
+<button
+  onclick="ClList['{{ key }}'].functions.startRecording(this.parentElement.parentElement)"
+>
+  {{ strings.start_recording }}
+</button>
+{{else}}
+<h1>{{ strings.welcome_in }}</h1>
+<p>{{ strings.program_for }}</p>
+<p>
+  {{ strings.frontend_for }}
+  <a href="https://wiki.archlinux.org/title/RecordMyDesktop">recordMyDesktop</a
+  >.
+</p>
+<button
+  onclick="ClList['{{ key }}'].functions.continueWelcome(this.parentElement.parentElement)"
+>
+  {{ strings.continue }}
+</button>
+{{/if}}
