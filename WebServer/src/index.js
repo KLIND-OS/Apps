@@ -18,7 +18,7 @@ ClassConstructor.add(
     };
 
     deps = {
-      express: LowLevelApi.NodePackages.get("express"),
+      express: undefined,
     };
 
     functions = {
@@ -32,6 +32,9 @@ ClassConstructor.add(
         name: "WebServer",
         hidden: false,
       });
+
+      // Load dependencies
+      this.deps.express = this.app.nodePackages.get("express");
 
       addWindows.bind(this)();
 
