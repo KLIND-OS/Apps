@@ -6,7 +6,7 @@ export default function selectFilePrint() {
       const parts = filePath.split(".")[1];
       const type = parts[parts.length - 1];
       if (!supported.includes(type)) {
-        return this.utils.notify("Tento typ souboru není podporován.");
+        return this.utils.notify("This file is not suppported.");
       }
 
       this.utils.print(filePath);

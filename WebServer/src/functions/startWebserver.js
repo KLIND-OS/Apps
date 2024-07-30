@@ -2,11 +2,11 @@ export default function startWebserver(win) {
   const port = win.querySelector("#port").value;
 
   if (this.globalStates.listeners.some((e) => e.adress().port == port)) {
-    return this.utils.notify("Server na tomto portu již běží!");
+    return this.utils.notify("Server is already running on this port!");
   }
 
   if (["9998", "9999", "100000"].includes(port)) {
-    return this.utils.notify("Tento port je využíván systémem!");
+    return this.utils.notify("This port is already used by the system!");
   }
 
   const path = LowLevelApi.filesystem.path.join(

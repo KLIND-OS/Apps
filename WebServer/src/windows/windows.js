@@ -3,7 +3,7 @@ import runningClose from "./RUNNING/close";
 
 export const windowNames = {
   MAIN: "WebServer",
-  RUNNING: "WebServer - Beží",
+  RUNNING: "WebServer - Running",
 };
 
 export function addWindows() {

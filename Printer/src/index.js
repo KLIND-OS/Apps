@@ -24,7 +24,7 @@ ClassConstructor.add(
       this.key = key;
 
       this.app = new App({
-        name: "Tisknout",
+        name: "Print",
         hidden: false,
       });
 

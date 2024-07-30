@@ -14,17 +14,17 @@ export default async function print(path) {
     ).stdout,
   );
 
-  control.message.list("Vyberte tiskárnu pro tisknutí", printers, (printer) => {
+  control.message.list("Select printer for printing", printers, (printer) => {
     control.message.prompt(
-      "Vyberte počet kopií",
+      "Select number of copies",
       async (copies) => {
         if (isNaN(parseInt(copies)) || parseInt(copies) < 1) {
-          return control.message.alert("Neplatný počet kopií!");
+          return control.message.alert("Invalid numbers of copies!");
         }
 
         await exec(`lp -d '${printer.trim()}' -n ${copies.trim()} '${finalPath}'`);
 
-        this.utils.notify("Tisknutí bylo zařazeno do fronty.");
+        this.utils.notify("File was added to the queue.");
       },
       "1",
     );

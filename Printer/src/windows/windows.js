@@ -1,7 +1,7 @@
 import mainOpen from "./MAIN/open";
 
 export const windowNames = {
-  MAIN: "Tisknout",
+  MAIN: "Print",
 };
 
 export function addWindows() {
